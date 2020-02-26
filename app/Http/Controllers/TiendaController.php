@@ -37,22 +37,22 @@ class TiendaController extends Controller
     public function store()
     {
         $data = request()->validate([
-            'name' => ['required','unique:tiendas,name'],
-            'company' => 'required',
-            'address' => 'required',
+            'nombre' => ['required','unique:tiendas,nombre'],
+            'marca' => 'required',
+            'direccion' => 'required',
             'email' => 'required',
         ], [
-            'name.required' => 'El nombre de la tienda es obligatorio',
-            'comapany.required' => 'El nombre de la compañía es obligatorio',
-            'address.required' => 'La dirección es obligatoria',
-            'email.required' => 'El email es obligatorio',
-            'name.unique' => 'El nombre ya esta en uso',
+            'nombre.required' => 'El nombre es obligatorio',
+            'marca.required' => 'La marca es obligatoria',
+            'direccion.required' => 'La dirección es obligatoria',
+            'email.required' => 'El precio es obligatorio',
+            'nombre.unique' => 'El nombre de la dirección ya esta en uso',
         ]);
 
         Tienda::create([
-            'name' => $data['name'],
-            'company' => $data['company'],
-            'address' => $data['address'],
+            'nombre' => $data['nombre'],
+            'marca' => $data['marca'],
+            'direccion' => $data['direccion'],
             'email' => $data['email'],
             
         ]);
@@ -68,16 +68,13 @@ class TiendaController extends Controller
     public function update(Tienda $tienda)
     {
         $data = request()->validate([
-            'name' => 'required',
-            'company' => 'required',
-            'address' => 'required',       
+            'nombre' => 'required',
+            'marca' => 'required',       
             'email' => 'required',
         ],[
-            'name.required' => 'El campo nombre es obligatorio',
-            'company.required' => 'El campo compañia es obligatorio',
-            'address.required' => 'La dirección es obligatoria',
-            'email.required' => 'El email es obligatorio',
-            'name.unique' => 'El nombre ya esta en uso',          
+            'nombre.required' => 'El campo nombre es obligatorio',
+            'marca.required' => 'El campo marca es obligatorio',
+            'email.required' => 'El email es obligatorio',          
         ]);
 
         $tienda->update($data);

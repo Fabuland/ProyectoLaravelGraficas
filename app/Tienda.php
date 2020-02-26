@@ -12,6 +12,6 @@ class Tienda extends Model
      * @var array
      */
     protected $fillable = [
-        'name', 'company', 'address','email'
+        'nombre', 'marca', 'direccion','email'
     ];
 }

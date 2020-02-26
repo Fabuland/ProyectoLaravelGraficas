@@ -7,7 +7,7 @@
     <meta name="author" content="">
     <link rel="icon" href="favicon.ico">
 
-    <title>@yield('title') - Styde.net</title>
+    <title>@yield('title') - graficas.net</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -21,7 +21,7 @@
 <header>
     <!-- Fixed navbar -->
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="#">Curso de Laravel</a>
+        <a class="navbar-brand" href="#">Graficas 1 Moviles 0</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -29,6 +29,18 @@
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
                     <a class="nav-link" href="{{ url('/usuarios') }}">Usuarios</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="{{ url('/graficas') }}">Graficas</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="{{ url('/tiendas') }}">Tiendas</a>
+                </li>
+                <li class="nav-item active justify-content-end">
+                    <a class="nav-link" href="{{ url('/login') }}">Login</a>
+                </li>
+                <li class="nav-item active justify-content-end">
+                    <a class="nav-link" href="{{ url('/register') }}"> Register</a>
                 </li>
             </ul>
         </div>
@@ -49,7 +61,7 @@
 
 <footer class="footer">
     <div class="container">
-        <span class="text-muted">https://styde.net</span>
+        <span class="text-muted">https://graficas.net</span>
     </div>
 </footer>
 

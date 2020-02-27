@@ -18,7 +18,7 @@
                 </div>
             @endif
 
-            <form method="POST" action="{{ url('Tiendas') }}">
+            <form method="POST" action="{{ url('tiendas') }}">
                 {{ csrf_field() }}
 
                 <div class="form-group">

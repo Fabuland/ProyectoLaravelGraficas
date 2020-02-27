@@ -30,7 +30,7 @@
         <input type="text" name="" id="direccion" placeholder="" value="{{ old('direccion', $tienda->direccion) }}">
         <br>
         <label for="email">Email:</label>
-        <input type="text" name="email" id="email" placeholder="" value="{{ old('tienda', $tienda->tienda) }}">
+        <input type="text" name="email" id="email" placeholder="" value="{{ old('email', $tienda->email) }}">
         <br>
         <button type="submit">Actualizar Tienda</button>
     </form>

@@ -22,6 +22,21 @@ class GraficaSeeder extends Seeder
             'precio' => '1299',
         ]);
 
+        Grafica::create([
+            'nombre' => 'Nvidia 2070Ti',
+            'modelo' => '2070Ti',
+            'compania' => 'Nvidia Corporation',
+            'marca' => 'Nvidia',
+            'precio' => '699',
+        ]);
+
+        Grafica::create([
+            'nombre' => 'Nvidia 2070',
+            'modelo' => '2070',
+            'compania' => 'Nvidia Corporation',
+            'marca' => 'Nvidia',
+            'precio' => '579',
+        ]);
 
     }
 }

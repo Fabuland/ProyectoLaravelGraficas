@@ -20,7 +20,7 @@
 
 <header>
     <!-- Fixed navbar -->
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <nav class="navbar navbar-expand-md navbar-success fixed-top bg-success">
         <a class="navbar-brand" href="#">Graficas 1 Moviles 0</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -28,19 +28,19 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="{{ url('/usuarios') }}">Usuarios</a>
+                    <a class="nav-link text-dark" href="{{ url('/usuarios') }}">Usuarios</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="{{ url('/graficas') }}">Graficas</a>
+                    <a class="nav-link text-dark" href="{{ url('/graficas') }}">Graficas</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="{{ url('/tiendas') }}">Tiendas</a>
+                    <a class="nav-link text-dark" href="{{ url('/tiendas') }}">Tiendas</a>
                 </li>
                 <li class="nav-item active justify-content-end">
-                    <a class="nav-link" href="{{ url('/login') }}">Login</a>
+                    <a class="nav-link text-dark" href="{{ url('/login') }}">Login</a>
                 </li>
                 <li class="nav-item active justify-content-end">
-                    <a class="nav-link" href="{{ url('/register') }}"> Register</a>
+                    <a class="nav-link text-dark" href="{{ url('/register') }}"> Register</a>
                 </li>
             </ul>
         </div>

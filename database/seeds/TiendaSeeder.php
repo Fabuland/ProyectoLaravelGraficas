@@ -21,6 +21,20 @@ class TiendaSeeder extends Seeder
             'email' => 'nvidia@gmail.com'
         ]);
 
+        Tienda::create([
+            'nombre' => 'AMD Store Madrid',
+            'marca' => 'AMD',
+            'direccion' => 'C/ Luna Madrid',
+            'email' => 'amd@gmail.com'
+        ]);
+
+        Tienda::create([
+            'nombre' => 'Intel Store Madrid',
+            'marca' => 'Intel',
+            'direccion' => 'C/ Star Madrid',
+            'email' => 'star@gmail.com'
+        ]);
+
 
     }
 }
